@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Portfolio - Submissions</title>
+  <title>Your Submissions</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,35 +17,59 @@
       font-size: 36px;
     }
 
-    .link-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 50px;
+    .submission-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    .link-container a {
+    .submission-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .submission-link {
+      display: block;
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .submission-link:hover {
+      color: #FF4081;
+    }
+
+    .back-button {
       display: inline-block;
       padding: 10px 20px;
-      background-color: #4CAF50;
+      background-color: #FF4081;
       color: #fff;
       text-decoration: none;
       border-radius: 4px;
       transition: background-color 0.3s;
-      margin: 0 10px;
+      font-size: 18px;
+      margin-top: 20px;
     }
 
-    .link-container a:hover {
-      background-color: #45a049;
+    .back-button:hover {
+      background-color: #F50057;
     }
   </style>
 </head>
 <body>
   <h1>Your Submissions</h1>
 
-  <div class="link-container">
-    <a href="https://youtu.be/e1LFleP7cho">Test 1</a>
-    <a href="https://www.youtube.com/watch?v=L_FEZY0yZ28&t=2s">Test 2</a>
-    <a href="https://www.youtube.com/watch?v=_UMrPsWgV7Y">Test 3</a>
+  <div class="submission-container">
+    <a class="submission-link" href="https://www.youtube.com/watch?v=e1LFleP7cho">Test 1</a>
+    <a class="submission-link" href="https://www.youtube.com/watch?v=L_FEZY0yZ28">Test 2</a>
+    <a class="submission-link" href="https://www.youtube.com/watch?v=_UMrPsWgV7Y&t=3s">Test 3</a>
+    <a class="submission-link" href="#">Test 4</a>
   </div>
+
+  <a class="back-button" href="index.html">Back to Home</a>
 </body>
 </html>
